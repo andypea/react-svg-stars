@@ -1,4 +1,4 @@
 import foo from "./foo.js";
-export default function () {
+export default () => {
   console.log(foo);
-}
+};
