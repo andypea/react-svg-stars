@@ -1,4 +1,6 @@
 import foo from "./foo.js";
-export default () => {
+export { Button } from "./bar.jsx";
+
+export const foobar = () => {
   console.log(foo);
 };
