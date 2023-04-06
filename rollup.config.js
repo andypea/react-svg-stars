@@ -14,6 +14,6 @@ export default {
       format: "es",
     },
   ],
-  plugins: [resolve(), babel({ babelHelpers: "bundled" }), commonjs()],
+  plugins: [resolve(), commonjs(), babel({ babelHelpers: "bundled" })],
   external: ["react", "react-dom"],
 };
