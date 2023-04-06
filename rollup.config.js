@@ -13,4 +13,5 @@ export default {
     },
   ],
   plugins: [resolve()],
+  external: ["react", "react-dom"],
 };
