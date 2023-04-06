@@ -1,5 +1,6 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
+import babel from "@rollup/plugin-babel";
 
 export default {
   input: "src/index.js",
@@ -13,6 +14,6 @@ export default {
       format: "es",
     },
   ],
-  plugins: [commonjs(), resolve()],
+  plugins: [resolve(), babel({ babelHelpers: "bundled" }), commonjs()],
   external: ["react", "react-dom"],
 };
