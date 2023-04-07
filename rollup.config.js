@@ -14,6 +14,6 @@ export default {
       format: "es",
     },
   ],
-  plugins: [resolve(), commonjs(), babel({ babelHelpers: "bundled" })],
-  external: ["react", "react-dom"],
+  plugins: [resolve(), commonjs(), babel({ babelHelpers: "runtime" })],
+  external: ["react", "react-dom", /@babel\/runtime/],
 };
