@@ -2,12 +2,18 @@
   "name": "react-svg-stars",
   "version": "0.1.0",
   "description": "React components that render SVG stars.",
-  "keywords": ["react", "svg", "star", "stars"],
+  "keywords": [
+    "react",
+    "svg",
+    "star",
+    "stars"
+  ],
   "homepage": "https://github.com/andypea/react-svg-stars",
   "bugs": "https://github.com/andypea/react-svg-stars/issues",
   "repository": {
-    "type": "git", 
-    "url": "https://github.com/andypea/react-svg-stars"},
+    "type": "git",
+    "url": "https://github.com/andypea/react-svg-stars"
+  },
   "main": "./dist/index.cjs",
   "exports": {
     "import": "./dist/index.mjs",
@@ -20,7 +26,10 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook-docs": "storybook build --docs --output-dir storybook-static"
   },
-  "author": {"name": "Andrew Punnett", "email": "andrew.punnett@gmail.com"},
+  "author": {
+    "name": "Andrew Punnett",
+    "email": "andrew.punnett@gmail.com"
+  },
   "files": [
     "package.json",
     "README.md",
