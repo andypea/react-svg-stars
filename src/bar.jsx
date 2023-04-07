@@ -1,5 +1,11 @@
 import React from "react";
 
-export const Button = (props) => {
-  return <button>props.text</button>;
+export function Button(props) {
+  return <button type="button">{props.text}</button>;
+}
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
 };
+
+export const answer = 42;
