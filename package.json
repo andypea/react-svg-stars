@@ -1,7 +1,14 @@
 {
   "name": "react-svg-stars",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "React components that render SVG stars.",
+  "keywords": ["react", "svg", "star", "stars"],
+  "homepage": "https://github.com/andypea/react-svg-stars",
+  "bugs": "https://github.com/andypea/react-svg-stars/issues",
+  "repository": {
+    "type": "git", 
+    "url": "https://github.com/andypea/react-svg-stars"},
+  "main": "./dist/index.cjs",
   "exports": {
     "import": "./dist/index.mjs",
     "require": "./dist/index.cjs"
@@ -13,9 +20,14 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook-docs": "storybook build --docs --output-dir storybook-static"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": {"name": "Andrew Punnett", "email": "andrew.punnett@gmail.com"},
+  "files": [
+    "package.json",
+    "README.md",
+    "dist",
+    "src"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/plugin-transform-runtime": "^7.21.4",
