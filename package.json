@@ -24,7 +24,8 @@
     "test": "jest",
     "build": "rollup --config",
     "storybook": "storybook dev -p 6006",
-    "build-storybook-docs": "storybook build --docs --output-dir storybook-static"
+    "build-storybook-docs": "storybook build --docs --output-dir storybook-static",
+    "lint": "eslint --ext .js,.jsx ."
   },
   "author": {
     "name": "Andrew Punnett",
