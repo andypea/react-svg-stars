@@ -15,5 +15,10 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "rules": {}
+  "rules": {},
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }
