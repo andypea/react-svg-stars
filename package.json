@@ -25,7 +25,8 @@
     "build": "rollup --config",
     "storybook": "storybook dev -p 6006",
     "build-storybook-docs": "storybook build --docs --output-dir storybook-static",
-    "lint": "eslint --ignore-path .gitignore --ext .js,.jsx ."
+    "lint": "eslint --ignore-path .gitignore --ext .js,.jsx .",
+    "prettify": "prettier --ignore-path .gitignore --write"
   },
   "author": {
     "name": "Andrew Punnett",
