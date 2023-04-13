@@ -24,6 +24,12 @@ const meta = {
         step: 0.01,
       },
     },
+    numPoints: {
+      control: {
+        type: "number",
+        min: 2,
+      },
+    },
   },
   args: { ...Star.defaultProps, cx: 75, cy: 75, radius: 30 },
   render: (args) => (
