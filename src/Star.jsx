@@ -83,12 +83,12 @@ Star.propTypes = {
   rotation: PropTypes.number,
 
   /**
-   * The center of the circle (x coordinate).
+   * The center of the star (x coordinate).
    */
   cx: PropTypes.number,
 
   /**
-   * The center of the circle (x coordinate).
+   * The center of the star (y coordinate).
    */
   cy: PropTypes.number,
 };
