@@ -1,4 +1,5 @@
-/** @type { import('@storybook/react').Preview } */
+import customTheme from "./customTheme.js";
+
 const preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
@@ -7,6 +8,9 @@ const preview = {
         color: /(background|color)$/i,
         date: /Date$/,
       },
+    },
+    docs: {
+      theme: customTheme,
     },
   },
 };
