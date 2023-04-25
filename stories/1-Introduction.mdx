@@ -1,0 +1,67 @@
+import { Canvas, Meta, Story } from '@storybook/blocks';
+import * as StarStories from './Star.stories.jsx';
+import { Star } from '../src/Star.jsx';
+
+<Meta title="Introduction" />
+
+# react-svg-stars 
+
+<center>
+  <svg>
+    <Star radius={10} cx={50} cy={15} numPoints={7} />
+    <Star radius={10} cx={15} cy={50} numPoints={7} />
+    <Star radius={10} cx={85} cy={40} numPoints={7} />
+    <Star radius={10} cx={49} cy={105} numPoints={7} />
+
+    <Star radius={5} cx={70} cy={60} numPoints={7} />
+  </svg>
+</center>
+
+This package contains react components that can be used to render stars within an SVG element.
+
+## Examples
+
+<Canvas of={StarStories.Default} />
+
+For more examples see the stories for the [Star component](../?path=/docs/library-star--docs).
+
+## Installation 
+
+The components exported by this package are [React](https://react.dev/) components.
+You can use them within your existing React app or [create a new one](https://react.dev/learn/start-a-new-react-project).
+
+Once you have created your React app install the react-svg-stars package:
+
+```
+npm install react-svg-stars
+```
+
+or
+
+```
+yarn install react-svg-stars
+```
+
+## Usage
+
+Once installed, you can import and use the `Star` component within your app:
+
+```
+import { Star } from 'react-svg-stars';
+
+...
+
+<svg>
+    <Star radius={10} cx={15} cy={15} />
+</svg>
+
+...
+```
+
+## Configuration
+
+Documentation for the component parameters and an interactive demo can be found in the documentation for the [Star component](../?path=/docs/library-star--docs).
+
+## Changelog
+
+See the [changelog](../?path=/docs/changelog--docs).

@@ -2,7 +2,7 @@ import React from "react";
 import { Star } from "../src/Star";
 
 const meta = {
-  title: "Example/Star",
+  title: "Library/Star",
   component: Star,
   tags: ["autodocs"],
   argTypes: {
@@ -101,3 +101,14 @@ export const Moved = {
     cy: 30,
   },
 };
+
+export const SouthernCross = (args) => (
+  <svg>
+    <Star radius={10} cx={50} cy={15} numPoints={7} />
+    <Star radius={10} cx={15} cy={50} numPoints={7} />
+    <Star radius={10} cx={85} cy={40} numPoints={7} />
+    <Star radius={10} cx={49} cy={105} numPoints={7} />
+
+    <Star radius={5} cx={70} cy={60} numPoints={7} />
+  </svg>
+);
