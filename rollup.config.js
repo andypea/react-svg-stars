@@ -15,5 +15,5 @@ export default {
     },
   ],
   plugins: [resolve(), commonjs(), babel({ babelHelpers: "runtime" })],
-  external: ["react", "react-dom", /@babel\/runtime/],
+  external: ["react", "react-dom", /@babel\/runtime/, "prop-types"],
 };
