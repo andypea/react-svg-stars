@@ -24,7 +24,7 @@ const gitTag = execSync("git tag --points-at HEAD").toString();
 
 const packageVersion = JSON.parse(readFileSync("package.json", "utf8")).version;
 
-if ("v".concat(gitTag) !== packageVersion) {
+if (gitTag !== "v".concat(packageVersion)) {
   console.error("ERROR: The git tag does not match the package version.");
   console.error("git tag: ".concat(gitTag));
   console.error("package version: ".concat(packageVersion));
