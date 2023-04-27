@@ -21,7 +21,8 @@
   },
   "type": "module",
   "scripts": {
-    "test": "jest --watchAll",
+    "test": "jest",
+    "test-watch": "jest --watchAll",
     "build": "rollup --config",
     "storybook": "storybook dev -p 6006",
     "storybook-docs": "storybook dev -p 6006 --docs",
