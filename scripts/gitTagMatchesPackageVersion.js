@@ -20,9 +20,11 @@ if (modifiedFiles !== "") {
   exit(2);
 }
 
-const gitTag = execSync("git tag --points-at HEAD").toString();
+const gitTag = execSync("git tag --points-at HEAD").toString().trim();
 
-const packageVersion = JSON.parse(readFileSync("package.json", "utf8")).version;
+const packageVersion = JSON.parse(
+  readFileSync("package.json", "utf8")
+).version.trim();
 
 if (gitTag !== "v".concat(packageVersion)) {
   console.error("ERROR: The git tag does not match the package version.");
