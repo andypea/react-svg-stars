@@ -27,7 +27,8 @@
     "storybook-docs": "storybook dev -p 6006 --docs",
     "build-storybook-docs": "storybook build --docs --output-dir storybook-static",
     "lint": "eslint --ignore-path .gitignore --ext .js,.jsx .",
-    "prettify": "prettier --ignore-path .gitignore --write"
+    "prettify": "prettier --ignore-path .gitignore --write",
+    "prepublishOnly": "jest && node scripts/gitTagMatchesPackageVersion.js"
   },
   "author": {
     "name": "Andrew Punnett",
