@@ -6,15 +6,15 @@ import { angularToCartesian, pointsToPath } from "./StarUtils.js";
  * Render an SVG star
  */
 export const Star = ({
-  numPoints,
-  radius,
-  radiusRatio,
-  className,
-  fill,
-  stroke,
-  rotation,
-  cx,
-  cy,
+  numPoints = 5,
+  radius = 10,
+  radiusRatio = 0.5,
+  className = "star",
+  fill = "yellow",
+  stroke = "black",
+  rotation = 0,
+  cx = 0,
+  cy = 0,
   ...props
 }) => {
   let pathString = "";
@@ -91,16 +91,4 @@ Star.propTypes = {
    * The center of the star (y coordinate).
    */
   cy: PropTypes.number,
-};
-
-Star.defaultProps = {
-  numPoints: 5,
-  radius: 10,
-  radiusRatio: 0.5,
-  className: "star",
-  fill: "yellow",
-  stroke: "black",
-  rotation: 0,
-  cx: 0,
-  cy: 0,
 };
